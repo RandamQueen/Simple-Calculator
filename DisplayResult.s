@@ -4,7 +4,7 @@
 	IMPORT	sendchar
 	EXPORT	start
 	PRESERVE8
-
+	;This code belongs to Hannah Keating, JF TCD student
 start
 	MOV R4, #0			;	result = 0 
 	MOV R5, #0			; 	finalAns = 0 
@@ -50,7 +50,7 @@ notNum
 	BEQ powerchar		; 	{
 	B read				; 	}
 
-
+	;This code belongs to Hannah Keating, JF TCD student
 backspace 				; 	undo inputed value  
 	BL	sendchar		; 	echo key back to console
 	
@@ -116,7 +116,7 @@ notsub
 	MUL R5,R12,R4		; 	finalAns = mulFirstNum * result
 
 notmul
-
+	;This code belongs to Hannah Keating, JF TCD student
 	CMP R7, #0			; 	if ( powerFirstNum != 0)
 	BEQ notpower		; 	{ 
 	MOV R6, #1			; 	powerStore =1	
@@ -138,7 +138,7 @@ notpower
 	
 	CMP R5,R6			; if( finalAns >= base)
 	BLO firstDigit		; 
-
+	;This code belongs to Hannah Keating, JF TCD student
 displayResult 
 	CMP R5, #0			; while( finalAns >0) 
 	BLO	firstDigit		; { 
@@ -155,7 +155,7 @@ computewhile 			;
 	SUB R8, R8, #1		; 	computePower = computePower -1 
 	b 	computewhile 	; 	}
 	
-	
+	;This code belongs to Hannah Keating, JF TCD student
 endcomputwh	
 	SUB R7, R7, #1		;  power = power -1
 	CMP R5, R9			;  if( finalAws < powerStore)
@@ -188,5 +188,5 @@ firstDigit				;
 	BL	sendchar		; echo display back to console
 	
 stop	B	stop
-
+	;This code belongs to Hannah Keating, JF TCD student
 	END	
