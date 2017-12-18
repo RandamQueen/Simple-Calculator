@@ -5,6 +5,7 @@
 	EXPORT	start
 	PRESERVE8
 
+	;This code belongs to Hannah Keating, JF TCD student
 start
 
 	MOV R4, #0		; result = 0
@@ -50,5 +51,5 @@ endwh
 
 endRead
 stop	B	stop
-
+	;This code belongs to Hannah Keating, JF TCD student
 	END	
