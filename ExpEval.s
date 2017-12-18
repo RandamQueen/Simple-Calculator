@@ -6,7 +6,7 @@
 	PRESERVE8
 
 start
-
+	;This code belongs to Hannah Keating, JF TCD student
 	MOV R4, #0		;	result = 0 
 	MOV R5, #0		; 	finalAns = 0 
 	MOV R6,#10		;
@@ -73,7 +73,7 @@ endwh
 	MOV R4, R9		; 	sets result = Quotient
 	
 	 B	read		; 	}	
-	 
+	 ;This code belongs to Hannah Keating, JF TCD student
 addchar
 	MOV R10, R4		;	addFirstNum = result  
 	MOV R4, #0		; 	reset input
@@ -98,7 +98,7 @@ powerchar
 	BL	sendchar	;   echo key back to console
 	B	read		;	 }	
 	
-	
+	;This code belongs to Hannah Keating, JF TCD student
 endRead				; 
 	CMP R10, #0		; 	if ( addFirstNum != 0)
 	BEQ notadd		; 	{ 	
@@ -133,5 +133,5 @@ notpower
 endCompute
 
 stop	B	stop
-
+	;This code belongs to Hannah Keating, JF TCD student
 	END	
